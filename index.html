@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VerseVault</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <!-- Google Fonts - Lexend and Cinzel -->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
 
   <style>
     /* General Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: "Poppins", sans-serif;
+      font-family: "Lexend", sans-serif;
       scroll-behavior: smooth;
       background: #f0f4f8;
       color: #333;
@@ -40,7 +40,7 @@
       background: rgba(26, 35, 126, 0.98);
     }
     nav h1 {
-      font-family: "Playfair Display", serif;
+      font-family: "Cinzel", serif;
       color: white;
       font-size: 1.8rem;
       font-weight: 800;
@@ -111,6 +111,7 @@
       display: block;
       padding: 0.5rem 0;
       position: relative;
+      font-family: "Lexend", sans-serif;
     }
     .drawer ul li a:after {
       content: '';
@@ -170,7 +171,7 @@
       animation: fadeInUp 1.2s ease-out;
     }
     .hero h2 {
-      font-family: "Playfair Display", serif;
+      font-family: "Cinzel", serif;
       font-size: 3.5rem;
       margin-bottom: 1.5rem;
       letter-spacing: 1px;
@@ -197,6 +198,7 @@
       box-shadow: 0 8px 25px rgba(0,0,0,0.2);
       position: relative;
       overflow: hidden;
+      font-family: "Lexend", sans-serif;
     }
     .hero a:hover {
       background: #e8eaf6;
@@ -260,7 +262,7 @@
       margin-bottom: 3rem;
       font-size: 2.5rem;
       color: #1a237e;
-      font-family: "Playfair Display", serif;
+      font-family: "Cinzel", serif;
       position: relative;
       padding-bottom: 1rem;
     }
@@ -317,7 +319,7 @@
       margin: 0;
       font-size: 1.4rem;
       color: #1a237e;
-      font-family: "Playfair Display", serif;
+      font-family: "Cinzel", serif;
       margin-bottom: 0.8rem;
     }
     .story-content p {
@@ -325,6 +327,7 @@
       color: #555;
       margin: 0.8rem 0 1.2rem;
       line-height: 1.7;
+      font-family: "Lexend", sans-serif;
     }
     .read-btn {
       display: inline-block;
@@ -339,6 +342,7 @@
       box-shadow: 0 4px 15px rgba(48, 63, 159, 0.3);
       position: relative;
       overflow: hidden;
+      font-family: "Lexend", sans-serif;
     }
     .read-btn:before {
       content: '';
@@ -410,6 +414,7 @@
       line-height: 1.8;
       font-weight: 400;
       margin-bottom: 1.5rem;
+      font-family: "Lexend", sans-serif;
     }
 
     /* New Footer */
@@ -428,7 +433,7 @@
       gap: 2rem;
     }
     .footer-section h3 {
-      font-family: "Playfair Display", serif;
+      font-family: "Cinzel", serif;
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
       position: relative;
@@ -448,6 +453,7 @@
       line-height: 1.8;
       color: #c5cae9;
       margin-bottom: 1rem;
+      font-family: "Lexend", sans-serif;
     }
     .social-links {
       display: flex;
@@ -478,6 +484,7 @@
       border-top: 1px solid rgba(255,255,255,0.1);
       color: #9fa8da;
       font-size: 0.9rem;
+      font-family: "Lexend", sans-serif;
     }
 
     /* Modal Styles */
@@ -521,7 +528,7 @@
       align-items: center;
     }
     .modal-header h2 {
-      font-family: "Playfair Display", serif;
+      font-family: "Cinzel", serif;
       font-size: 1.8rem;
       margin: 0;
     }
@@ -537,6 +544,93 @@
       width: 100%;
       height: 600px;
       border: none;
+    }
+
+    /* Notification Modal */
+    .notification-modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      z-index: 3000;
+      backdrop-filter: blur(10px);
+    }
+    .notification-modal.active {
+      visibility: visible;
+      opacity: 1;
+    }
+    .notification-modal.active .notification-content {
+      transform: scale(1);
+    }
+    .notification-content {
+      background: white;
+      width: 95%;
+      max-width: 500px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+      transform: scale(0.9);
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .notification-header {
+      background: linear-gradient(135deg, #303f9f, #3949ab);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .notification-header h2 {
+      font-family: "Cinzel", serif;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+    .notification-body {
+      padding: 2rem;
+      text-align: center;
+    }
+    .notification-body h3 {
+      color: #1a237e;
+      font-family: "Cinzel", serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .notification-body p {
+      color: #555;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      font-family: "Lexend", sans-serif;
+    }
+    .notification-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .notification-btn {
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      border: none;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: "Lexend", sans-serif;
+    }
+    .notification-btn.primary {
+      background: linear-gradient(135deg, #303f9f, #3949ab);
+      color: white;
+    }
+    .notification-btn.secondary {
+      background: #e0e0e0;
+      color: #333;
+    }
+    .notification-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
 
     /* Animations */
@@ -616,6 +710,9 @@
       .drawer {
         width: 280px;
       }
+      .notification-actions {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -643,6 +740,7 @@
   <!-- Overlay -->
   <div class="overlay" id="overlay"></div>
 
+    
   <!-- Hero -->
   <section class="hero" id="home-section">
     <div class="floating-elements">
@@ -688,11 +786,11 @@
       <!--STORY THREE -->
       
        <div class="story-card">
-        <img src="IMAGE/THE%20AIR.jpg" alt="">
+        <img src="IMAGE/THE%20AIR.jpg" alt="The Air">
         <div class="story-content">
           <h3>The Air (4 Elements)</h3>
           <p>She was as free as the wind — but love still tied her down.</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
@@ -700,22 +798,22 @@
       <!--STORY FOUR -->
       
       <div class="story-card">
-        <img src="IMAGE/THE%20EARTH.jpg" alt="">
+        <img src="IMAGE/THE%20EARTH.jpg" alt="The Earth">
         <div class="story-content">
           <h3>The Earth (4 Elements)</h3>
           <p>Steady as the earth, but shaken by love’s tremors</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
       <!--STORY FIVE -->
       
       <div class="story-card">
-        <img src="IMAGE/THE%20FIRE.jpg" alt="">
+        <img src="IMAGE/THE%20FIRE.jpg" alt="The Fire">
         <div class="story-content">
           <h3>The Fire (4 Elements)</h3>
           <p>She burned too brightly to ignore — but would love consume them both?</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
@@ -723,22 +821,22 @@
       <!--STORY SIX -->
       
       <div class="story-card">
-        <img src="IMAGE/THE%20WATER.jpg" alt="">
+        <img src="IMAGE/THE%20WATER.jpg" alt="The Water">
         <div class="story-content">
           <h3>The Water (4 Elements)</h3>
           <p>Gentle like waves, fierce like storms — her love was the tide itself.</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
       <!--STORY SEVEN -->
       
       <div class="story-card">
-        <img src="IMAGE/A%20SHADOW%20UNDERNEATH%20THE%20MOON.jpg" alt="">
+        <img src="IMAGE/A%20SHADOW%20UNDERNEATH%20THE%20MOON.jpg" alt="A Shadow Underneath the Moon">
         <div class="story-content">
           <h3>A Shadow Underneath the Moon</h3>
           <p>When the night hides secrets, love finds a way to shine through. Would you dare to love under the moonlight?</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
@@ -746,11 +844,11 @@
       <!--STORY EIGHT -->
       
       <div class="story-card">
-        <img src="IMAGE/BUILT%20IN%20LOVE.jpg" alt="">
+        <img src="IMAGE/BUILT%20IN%20LOVE.jpg" alt="Built in Love">
         <div class="story-content">
           <h3>Built in Love</h3>
           <p>They built dreams together — but could they also build love?</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
@@ -758,11 +856,11 @@
       <!--STORY NINE -->
       
       <div class="story-card">
-        <img src="IMAGE/CHASING%20LOVE.jpg" alt="">
+        <img src="IMAGE/CHASING%20LOVE.jpg" alt="Chasing Love">
         <div class="story-content">
           <h3>Chasing Love</h3>
           <p>Some love stories aren’t found… they’re chased.</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
@@ -770,11 +868,11 @@
       <!--STORY TEN -->
       
       <div class="story-card">
-        <img src="IMAGE/CLAIRE%20BELL.jpg" alt="">
+        <img src="IMAGE/CLAIRE%20BELL.jpg" alt="Claire Bell">
         <div class="story-content">
           <h3>Claire Bell</h3>
           <p>A name she couldn’t forget, a love she couldn’t escape.</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Read Story</a>
+          <a href="#" class="read-btn coming-soon">Read Story</a>
         </div>
       </div>
       
@@ -782,11 +880,11 @@
       <!--STORY ELEVEN -->
       
       <div class="story-card">
-        <img src="IMAGE/CRANIUM.jpg" alt="">
+        <img src="IMAGE/CRANIUM.jpg" alt="Cranium">
         <div class="story-content">
           <h3>Cranium</h3>
           <p>In the game of minds and hearts, who really wins?</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
@@ -794,66 +892,66 @@
       <!--STORY TWELVE -->
       
       <div class="story-card">
-        <img src="IMAGE/HARMONY%20SECRET.jpg" alt="">
+        <img src="IMAGE/HARMONY%20SECRET.jpg" alt="Harmony Secret">
         <div class="story-content">
           <h3>Harmony Secret</h3>
           <p>Every melody hides a secret — and hers was love.</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
       <!--STORY 13 -->
       
        <div class="story-card">
-        <img src="IMAGE/IRRESISTIBLE.jpg" alt="">
+        <img src="IMAGE/IRRESISTIBLE.jpg" alt="Irresistible">
         <div class="story-content">
           <h3>Irresistible</h3>
           <p>She was temptation wrapped in a smile. Who could resist?</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
       <!--STORY 14 -->  
       
        <div class="story-card">
-        <img src="IMAGE/LOVE%20FIBRE.png" alt="">
+        <img src="IMAGE/LOVE%20FIBRE.png" alt="Love Fibre">
         <div class="story-content">
           <h3>Love Fibre</h3>
           <p>When two souls connect, no distance can tear them apart.</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
         
         <!--STORY 15 --> 
       
        <div class="story-card">
-        <img src="IMAGE/OBSESSED.jpg" alt="">
+        <img src="IMAGE/OBSESSED.jpg" alt="Obsessed">
         <div class="story-content">
           <h3>Obsessed</h3>
           <p>Desire turned dangerous. Love, or obsession?</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
         <!--STORY 16 --> 
       
       <div class="story-card">
-        <img src="IMAGE/PETRICHOR.jpg" alt="">
+        <img src="IMAGE/PETRICHOR.jpg" alt="Petrichor">
         <div class="story-content">
           <h3>Petrichor</h3>
           <p>Love, like rain, leaves a scent you can’t forget.</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
        <!--STORY 17 --> 
       
       <div class="story-card">
-        <img src="IMAGE/PLAYER.jpg" alt="">
+        <img src="IMAGE/PLAYER.jpg" alt="Player">
         <div class="story-content">
           <h3>Player</h3>
           <p>She played the game of love — until she became the prize.</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
@@ -861,11 +959,11 @@
        <!--STORY 18 --> 
       
       <div class="story-card">
-        <img src="IMAGE/POISONOUS%20LOVE.jpg" alt="">
+        <img src="IMAGE/POISONOUS%20LOVE.jpg" alt="Poisonous Love">
         <div class="story-content">
           <h3>Poisonous Love</h3>
           <p>Her kiss was sweet… but deadly.</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
@@ -873,11 +971,11 @@
        <!--STORY 19 --> 
       
       <div class="story-card">
-        <img src="IMAGE/PROFESSOR%20WITH%20BENEFITS.jpg" alt="">
+        <img src="IMAGE/PROFESSOR%20WITH%20BENEFITS.jpg" alt="Professor with Benefits">
         <div class="story-content">
           <h3>Professor with Benefits</h3>
           <p>Lessons in love were never part of the syllabus.</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
@@ -885,49 +983,48 @@
        <!--STORY 20 --> 
       
       <div class="story-card">
-        <img src="IMAGE/QUEENDOM.jpg" alt="">
+        <img src="IMAGE/QUEENDOM.jpg" alt="Queendom">
         <div class="story-content">
           <h3>Queendom</h3>
           <p>Two women. One throne. A love that could rule them all.</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
        <!--STORY 21 --> 
       
       <div class="story-card">
-        <img src="IMAGE/ROLLER%20COASTER.jpg" alt="">
+        <img src="IMAGE/ROLLER%20COASTER.jpg" alt="Roller Coaster">
         <div class="story-content">
           <h3>Roller Coaster</h3>
           <p>Love takes you up, down, and spinning — are you ready for the ride? </p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
        <!--STORY 22 --> 
       
       <div class="story-card">
-        <img src="IMAGE/THE%20SECRET%20OF%20US.jpg" alt="">
+        <img src="IMAGE/THE%20SECRET%20OF%20US.jpg" alt="The Secret of Us">
         <div class="story-content">
           <h3>The Secret of Us</h3>
           <p>Every love story has a secret… this one could change everything.</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
       
       <!--STORY 23 --> 
       
       <div class="story-card">
-        <img src="IMAGE/CHAIN.jpg" alt="">
+        <img src="IMAGE/CHAIN.jpg" alt="Chain">
         <div class="story-content">
           <h3>Chain</h3>
           <p>Love that binds, love that breaks. Which side will win?</p>
-          <a href="#" class="read-btn" onclick="openModal('')">Available In A Bit</a>
+          <a href="#" class="read-btn coming-soon">Available In A Bit</a>
         </div>
       </div>
-      
-      
-      <!--STORY 24 
+        
+       <!--STORY 24 
       
       <div class="story-card">
         <img src="" alt="">
@@ -1083,9 +1180,14 @@
         </div>
       </div>
       
-      --> 
-      
-      
+      -->  
+        
+        
+        
+        
+        
+        
+        
     </div>
   </section>
   
@@ -1147,6 +1249,23 @@
     </div>
   </div>
 
+  <!-- Notification Modal -->
+  <div class="notification-modal" id="notificationModal">
+    <div class="notification-content">
+      <div class="notification-header">
+        <h2>🎉 New Stories Alert!</h2>
+      </div>
+      <div class="notification-body">
+        <h3>Exciting New Additions!</h3>
+        <p>We've just uploaded fresh stories to VerseVault! Discover new adventures, meet captivating characters, and dive into worlds waiting to be explored.</p>
+        <div class="notification-actions">
+          <button class="notification-btn primary" onclick="closeNotification()">Check Them Out</button>
+          <button class="notification-btn secondary" onclick="dismissNotification()">Maybe Later</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script>
     // Drawer functionality
     const menuIcon = document.getElementById('menuIcon');
@@ -1182,9 +1301,11 @@
 
     // Modal functionality
     function openModal(docUrl) {
-      document.getElementById("storyModal").classList.add("active");
-      document.getElementById("storyFrame").src = docUrl;
-      document.body.style.overflow = 'hidden';
+      if (docUrl) {
+        document.getElementById("storyModal").classList.add("active");
+        document.getElementById("storyFrame").src = docUrl;
+        document.body.style.overflow = 'hidden';
+      }
     }
     
     function closeModal() {
@@ -1192,6 +1313,30 @@
       setTimeout(() => {
         document.getElementById("storyFrame").src = "";
       }, 400);
+      document.body.style.overflow = 'auto';
+    }
+
+    // Notification Modal functionality
+    function showNotification() {
+      document.getElementById("notificationModal").classList.add("active");
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeNotification() {
+      document.getElementById("notificationModal").classList.remove("active");
+      document.body.style.overflow = 'auto';
+      // Scroll to stories section
+      const storiesSection = document.getElementById("stories-section");
+      if (storiesSection) {
+        window.scrollTo({
+          top: storiesSection.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      }
+    }
+    
+    function dismissNotification() {
+      document.getElementById("notificationModal").classList.remove("active");
       document.body.style.overflow = 'auto';
     }
 
@@ -1257,6 +1402,10 @@
         heroButton.style.animation = '';
       }, 2000);
     }, 8000);
+
+    // Show notification modal after 5 seconds (you can remove this or change the timing)
+    // To disable the notification, comment out the next line
+    setTimeout(showNotification, 5000);
   </script>
 
 </body>
