@@ -796,6 +796,7 @@
       <li><a href="#home-section" class="drawer-link">Home</a></li>
       <li><a href="#stories-section" class="drawer-link">Stories</a></li>
       <li><a href="#about-section" class="drawer-link">About Us</a></li>
+      <li><a href="#original-section" class="drawer-link">Originals</a></li>
       <li><a href="#contact-section" class="drawer-link">Contact</a></li>
     </ul>
   </div>
@@ -1343,7 +1344,39 @@
         
     </div>
   </section>
+
+   <!-- Original -->
+  <section id="stories-section">
+    <h2>Originals</h2>
+    <div class="story-grid">
+        
+        <!--ORIGINAL 1-->
+        
+      <div class="story-card">
+        <img src="https://i.imgur.com/GbNzLvy.jpeg" alt="Salt In Her Veins">
+        <div class="story-content">
+          <h3>Salt In Her Veins</h3>
+          <p>She came to claim a house. The island gave her a history—and a woman she couldn’t forget.</p>
+          <a href="#" class="read-btn" onclick="openModal('https://drive.google.com/file/d/1RsCAcgXiS0XYBMBsw0uqfwMnEh_L8yTR/preview')">Read Story</a>
+        </div>
+      </div>
+        
+        <!--ORIGINAL 2-->
+        
+      <div class="story-card">
+        <img src="https://i.imgur.com/lzqztmy.png" alt="Yesterday's Happiness">
+        <div class="story-content">
+          <h3>Yesterday's Happiness</h3>
+          <p>They were happy once. But yesterday doesn’t hold still—and neither do hearts that remember.</p>
+          <p>Short Story</p>
+          <a href="#" class="read-btn" onclick="openModal('https://drive.google.com/file/d/1z6oSxMoiCp55f_p5fP27qrOzKA1yxbtN/preview')">Read Story</a>
+        </div>
+      </div>
+      
   
+    </div>
+  </section>
+
   
 
   <!-- About -->
@@ -1393,7 +1426,9 @@
         <h3>Explore</h3>
         <p><a href="#home-section" style="color: #9fa8da; text-decoration: none;">Home</a></p>
         <p><a href="#stories-section" style="color: #9fa8da; text-decoration: none;">Stories</a></p>
+        <p><a href="#original-section" style="color: #9fa8da; text-decoration: none;">Originals</a></p>
         <p><a href="#about-section" style="color: #9fa8da; text-decoration: none;">About Us</a></p>
+        <p><a href="#contact-section" style="color: #9fa8da; text-decoration: none;">Contact</a></p>
       </div>
       
       
@@ -1511,6 +1546,19 @@
       if (storiesSection) {
         window.scrollTo({
           top: storiesSection.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      }
+    }
+
+      function closeNotification() {
+      document.getElementById("notificationModal").classList.remove("active");
+      document.body.style.overflow = 'auto';
+      // Scroll to original section
+      const orginalSection = document.getElementById("original-section");
+      if (originalSection) {
+        window.scrollTo({
+          top: originalSection.offsetTop - 80,
           behavior: 'smooth'
         });
       }
