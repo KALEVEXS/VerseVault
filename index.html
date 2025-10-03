@@ -1,3 +1,5 @@
+WITHOUT SEARCH
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,81 +75,6 @@
       letter-spacing: 1px;
       animation: fadeInDown 1s ease-out;
       text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    }
-
-    /* Search Container */
-    .search-container {
-      position: relative;
-      margin: 0 1rem;
-    }
-    
-    .search-input {
-      padding: 0.6rem 1rem 0.6rem 2.5rem;
-      border-radius: 20px;
-      border: none;
-      background: rgba(255,255,255,0.2);
-      color: white;
-      font-family: "Lexend", sans-serif;
-      width: 200px;
-      transition: all 0.3s ease;
-    }
-    
-    .search-input:focus {
-      outline: none;
-      background: rgba(255,255,255,0.3);
-      width: 250px;
-    }
-    
-    .search-input::placeholder {
-      color: rgba(255,255,255,0.7);
-    }
-    
-    .search-icon {
-      position: absolute;
-      left: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: rgba(255,255,255,0.7);
-    }
-    
-    .search-results {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      max-height: 300px;
-      overflow-y: auto;
-      z-index: 1001;
-      display: none;
-    }
-    
-    .search-result-item {
-      padding: 0.8rem 1rem;
-      border-bottom: 1px solid #eee;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-    
-    .search-result-item:hover {
-      background: #f0f4f8;
-    }
-    
-    .search-result-item:last-child {
-      border-bottom: none;
-    }
-    
-    .search-result-title {
-      font-weight: 600;
-      color: var(--primary-dark);
-      margin-bottom: 0.2rem;
-    }
-    
-    .search-result-section {
-      font-size: 0.8rem;
-      color: #777;
     }
 
     /* Enhanced Menu Icon */
@@ -792,7 +719,7 @@
     .modal {
       position: fixed;
       top: 0; left: 0;
-      width: 100%; height: 100%;
+      width: 100%; height: 115%;
       background: rgba(0,0,0,0.9);
       display: flex;
       align-items: center;
@@ -821,9 +748,6 @@
       transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       z-index: 2001;
       border: 1px solid rgba(255,255,255,0.2);
-      max-height: 90vh;
-      display: flex;
-      flex-direction: column;
     }
     .modal-header {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
@@ -856,13 +780,9 @@
       transform: rotate(90deg) scale(1.1);
       background: rgba(255,255,255,0.2);
     }
-    .modal-body {
-      flex: 1;
-      overflow: hidden;
-    }
     iframe {
       width: 100%;
-      height: 70vh;
+      height: 700px;
       border: none;
     }
 
@@ -1307,128 +1227,6 @@
         width: 12px;
         height: 12px;
       }
-      .search-input {
-        width: 150px;
-      }
-      .search-input:focus {
-        width: 180px;
-      }
-      iframe {
-        height: 60vh;
-      }
-      .notification-body h3 {
-        font-size: 1.4rem;
-      }
-      .notification-body p {
-        font-size: 1rem;
-      }
-      .notification-btn {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-      }
-      .story-content h3 {
-        font-size: 1.4rem;
-      }
-      .story-content p {
-        font-size: 1rem;
-      }
-      .read-btn {
-        padding: 0.7rem 1.4rem;
-        font-size: 0.95rem;
-      }
-      .flash-text {
-        font-size: 0.8rem;
-        padding: 3px 10px;
-      }
-      .hero a {
-        padding: 1rem 2rem;
-        font-size: 1.1rem;
-      }
-      .contact-form {
-        padding: 2rem;
-      }
-      .contact input, .contact textarea {
-        padding: 1.2rem;
-        font-size: 1rem;
-      }
-      .contact button {
-        padding: 1.2rem;
-        font-size: 1.1rem;
-      }
-      .footer-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-      .footer-section h3 {
-        font-size: 1.5rem;
-      }
-      .footer-section p {
-        font-size: 1rem;
-      }
-      .social-links {
-        justify-content: center;
-      }
-      .modal-content {
-        width: 98%;
-        max-width: none;
-        border-radius: 15px;
-      }
-      .modal-header h2 {
-        font-size: 1.5rem;
-      }
-      .close-btn {
-        font-size: 2rem;
-        width: 35px;
-        height: 35px;
-      }
-      iframe {
-        height: 50vh;
-      }
-      .notification-content {
-        width: 95%;
-        max-width: none;
-        border-radius: 15px;
-      }
-      .notification-header h2 {
-        font-size: 1.8rem;
-      }
-      .notes-modal {
-        width: calc(100% - 20px);
-        right: 10px;
-        left: 10px;
-        top: 10px;
-      }
-      .notes-header h3 {
-        font-size: 1.2rem;
-      }
-      .notes-body {
-        padding: 1rem;
-      }
-      .notes-body p {
-        font-size: 0.85rem;
-      }
-      .notes-timer {
-        font-size: 0.8rem;
-        padding: 0.6rem;
-      }
-      .mature-warning-content {
-        width: 95%;
-        max-width: none;
-        border-radius: 15px;
-      }
-      .mature-warning-header h2 {
-        font-size: 1.5rem;
-      }
-      .mature-warning-body p {
-        font-size: 0.95rem;
-      }
-      .mature-warning-timer {
-        font-size: 1rem;
-      }
-      .mature-warning-btn {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.9rem;
-      }
     }
 
     @media (max-width: 480px) {
@@ -1451,115 +1249,13 @@
         font-size: 1.3rem;
       }
       .contact-form {
-        padding: 1.5rem;
+        padding: 2rem;
       }
       .notes-modal {
         max-height: 300px; /* Further reduced for small screens */
       }
       .notes-body {
         max-height: 200px; /* Adjusted for small screens */
-      }
-      iframe {
-        height: 45vh;
-      }
-      nav h1 {
-        font-size: 1.5rem;
-      }
-      .search-input {
-        width: 120px;
-        font-size: 0.9rem;
-        padding: 0.5rem 0.8rem 0.5rem 2rem;
-      }
-      .search-input:focus {
-        width: 150px;
-      }
-      .search-icon {
-        left: 8px;
-        font-size: 0.9rem;
-      }
-      .hero-content {
-        padding: 1rem;
-      }
-      .hero a {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-      }
-      .story-card img {
-        height: 200px;
-      }
-      .flash-text {
-        font-size: 0.7rem;
-        padding: 2px 8px;
-      }
-      .notification-actions {
-        gap: 1rem;
-      }
-      .notification-btn {
-        padding: 0.7rem 1.2rem;
-        font-size: 0.9rem;
-      }
-      .modal-header {
-        padding: 1.2rem;
-      }
-      .modal-header h2 {
-        font-size: 1.3rem;
-      }
-      .close-btn {
-        font-size: 1.8rem;
-        width: 30px;
-        height: 30px;
-      }
-      .notification-header {
-        padding: 1.5rem;
-      }
-      .notification-header h2 {
-        font-size: 1.5rem;
-      }
-      .notification-body {
-        padding: 1.5rem;
-      }
-      .notification-body h3 {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-      }
-      .notification-body p {
-        font-size: 0.9rem;
-        margin-bottom: 1.5rem;
-      }
-      .notes-header {
-        padding: 1rem;
-      }
-      .notes-header h3 {
-        font-size: 1.1rem;
-      }
-      .notes-close {
-        font-size: 1.5rem;
-        width: 30px;
-        height: 30px;
-      }
-      .mature-warning-header {
-        padding: 1.5rem;
-      }
-      .mature-warning-header h2 {
-        font-size: 1.3rem;
-      }
-      .mature-warning-body {
-        padding: 1.5rem;
-      }
-      .mature-warning-body p {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-      }
-      .mature-warning-timer {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-      }
-      .mature-warning-actions {
-        gap: 0.8rem;
-      }
-      .mature-warning-btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
       }
     }
   </style>
@@ -1569,11 +1265,6 @@
   <!-- Navbar -->
   <nav id="navbar">
     <h1>VerseVault</h1>
-    <div class="search-container">
-      <span class="search-icon">🔍</span>
-      <input type="text" class="search-input" id="searchInput" placeholder="Search stories...">
-      <div class="search-results" id="searchResults"></div>
-    </div>
     <button class="menu-icon" id="menuIcon">
       <span></span>
       <span></span>
@@ -1620,7 +1311,7 @@
         
         <!--STORY 1-->
         
-      <div class="story-card" data-title="Enemies With Benefits" data-section="stories" id="story-1">
+      <div class="story-card">
         <img src="https://i.imgur.com/GbNzLvy.jpeg" alt="Enemies With Benefits">
         <div class="story-content">
           <h3>Enemies With Benefits</h3>
@@ -1632,7 +1323,7 @@
         
         <!--STORY 2-->
         
-      <div class="story-card" data-title="Buy My Boss" data-section="stories" id="story-2">
+      <div class="story-card">
         <img src="https://i.imgur.com/WHMjMRZ.jpeg" alt="Buy My Boss">
         <div class="story-content">
           <h3>Buy My Boss</h3>
@@ -1644,7 +1335,7 @@
         
       <!--STORY 3 -->
       
-       <div class="story-card" data-title="The Air" data-section="stories" id="story-3">
+       <div class="story-card">
         <img src="https://i.imgur.com/foFvJqm.jpeg" alt="The Air">
         <div class="story-content">
           <h3>The Air (4 Elements)</h3>
@@ -1656,7 +1347,7 @@
       
       <!--STORY 4 -->
       
-      <div class="story-card" data-title="The Earth" data-section="stories" id="story-4">
+      <div class="story-card">
         <img src="https://i.imgur.com/9anAWX0.jpeg" alt="The Earth" loading="lazy">
         <div class="story-content">
           <h3>The Earth (4 Elements)</h3>
@@ -1667,7 +1358,7 @@
       
       <!--STORY 5 -->
       
-      <div class="story-card" data-title="The Fire" data-section="stories" id="story-5">
+      <div class="story-card">
         <img src="https://i.imgur.com/FBcxRjr.jpeg" alt="The Fire">
         <div class="story-content">
           <h3>The Fire (4 Elements)</h3>
@@ -1679,7 +1370,7 @@
       
       <!--STORY 6 -->
       
-      <div class="story-card" data-title="The Water" data-section="stories" id="story-6">
+      <div class="story-card">
         <img src="https://i.imgur.com/SF8tYUw.jpeg" alt="The Water">
         <div class="story-content">
           <h3>The Water (4 Elements)</h3>
@@ -1690,7 +1381,7 @@
       
       <!--STORY 7 -->
       
-      <div class="story-card" data-title="A Shadow Underneath the Moon" data-section="stories" id="story-7">
+      <div class="story-card">
         <img src="https://i.imgur.com/Pfx0sxo.jpeg" alt="A Shadow Underneath the Moon">
         <div class="story-content">
           <h3>A Shadow Underneath the Moon</h3>
@@ -1703,7 +1394,7 @@
       
       <!--STORY 8 -->
       
-      <div class="story-card" data-title="Built in Love" data-section="stories" id="story-8">
+      <div class="story-card">
         <img src="https://i.imgur.com/IIrmTwx.jpeg" alt="Built in Love">
         <div class="story-content">
           <h3>Built in Love</h3>
@@ -1715,7 +1406,7 @@
       
       <!--STORY 9 -->
       
-      <div class="story-card" data-title="Chasing Love" data-section="stories" id="story-9">
+      <div class="story-card">
         <img src="https://i.imgur.com/i6UAafa.jpeg" alt="Chasing Love">
         <div class="story-content">
           <h3>Chasing Love</h3>
@@ -1727,7 +1418,7 @@
       
       <!--STORY 10 -->
       
-      <div class="story-card" data-title="Claire Bell" data-section="stories" id="story-10">
+      <div class="story-card">
         <img src="https://i.imgur.com/BwpoEiU.jpeg" alt="Claire Bell">
         <div class="story-content">
           <h3>Claire Bell</h3>
@@ -1740,7 +1431,7 @@
       
       <!--STORY 11 -->
       
-      <div class="story-card" data-title="Cranium" data-section="stories" id="story-11">
+      <div class="story-card">
         <img src="https://i.imgur.com/CaEWSPJ.jpeg" alt="Cranium">
         <div class="story-content">
           <h3>Cranium</h3>
@@ -1752,7 +1443,7 @@
       
       <!--STORY 12 -->
       
-      <div class="story-card" data-title="Harmony Secret" data-section="stories" id="story-12">
+      <div class="story-card">
         <img src="https://i.imgur.com/yCA41Jz.jpeg" alt="Harmony Secret">
         <div class="story-content">
           <h3>Harmony Secret</h3>
@@ -1764,7 +1455,7 @@
       
       <!--STORY 13 -->
       
-       <div class="story-card" data-title="Irresistible" data-section="stories" id="story-13">
+       <div class="story-card">
         <img src="https://i.imgur.com/pISIxXn.jpeg" alt="Irresistible">
         <div class="story-content">
           <h3>Irresistible</h3>
@@ -1775,7 +1466,7 @@
       
       <!--STORY 14 -->  
       
-       <div class="story-card" data-title="Love Fibre" data-section="stories" id="story-14">
+       <div class="story-card">
         <img src="https://i.imgur.com/fwB4OkB.jpeg" alt="Love Fibre">
         <div class="story-content">
           <h3>Love Fibre</h3>
@@ -1786,7 +1477,7 @@
         
         <!--STORY 15 --> 
       
-       <div class="story-card" data-title="Obsessed" data-section="stories" id="story-15">
+       <div class="story-card">
         <img src="https://i.imgur.com/KdM99bQ.jpeg" alt="Obsessed">
         <div class="story-content">
           <h3>Obsessed</h3>
@@ -1797,7 +1488,7 @@
       
         <!--STORY 16 --> 
       
-      <div class="story-card" data-title="Petrichor" data-section="stories" id="story-16">
+      <div class="story-card">
         <img src="https://i.imgur.com/FqCWq57.jpeg" alt="Petrichor">
         <div class="story-content">
           <h3>Petrichor Volume 1</h3>
@@ -1809,7 +1500,7 @@
       
        <!--STORY 17 --> 
       
-      <div class="story-card" data-title="Player" data-section="stories" id="story-17">
+      <div class="story-card">
         <img src="https://i.imgur.com/ImhXyF8.jpeg" alt="Player">
         <div class="story-content">
           <h3>Player</h3>
@@ -1822,7 +1513,7 @@
       
        <!--STORY 18 --> 
       
-      <div class="story-card" data-title="Poisonous Love" data-section="stories" id="story-18">
+      <div class="story-card">
         <img src="https://i.imgur.com/kuXyaRV.jpeg" alt="Poisonous Love">
         <div class="story-content">
           <h3>Poisonous Love</h3>
@@ -1835,7 +1526,7 @@
       
        <!--STORY 19 --> 
       
-      <div class="story-card" data-title="Professor with Benefits" data-section="stories" id="story-19">
+      <div class="story-card">
         <img src="https://i.imgur.com/8WVynMP.jpeg" alt="Professor with Benefits">
         <div class="story-content">
           <h3>Professor with Benefits</h3>
@@ -1847,7 +1538,7 @@
       
        <!--STORY 20 --> 
       
-      <div class="story-card" data-title="Queendom" data-section="stories" id="story-20">
+      <div class="story-card">
         <img src="https://i.imgur.com/1cSsYc9.jpeg" alt="Queendom">
         <div class="story-content">
           <h3>Queendom</h3>
@@ -1859,7 +1550,7 @@
       
        <!--STORY 21 --> 
       
-      <div class="story-card" data-title="Roller Coaster" data-section="stories" id="story-21">
+      <div class="story-card">
         <img src="https://i.imgur.com/ECE7w0X.jpeg" alt="Roller Coaster">
         <div class="story-content">
           <h3>Roller Coaster</h3>
@@ -1871,7 +1562,7 @@
       
        <!--STORY 22 --> 
       
-      <div class="story-card" data-title="The Secret of Us" data-section="stories" id="story-22">
+      <div class="story-card">
         <img src="https://i.imgur.com/L3F2t2z.jpeg" alt="The Secret of Us">
         <div class="story-content">
           <h3>The Secret of Us</h3>
@@ -1882,7 +1573,7 @@
       
       <!--STORY 23 --> 
       
-      <div class="story-card" data-title="Chain" data-section="stories" id="story-23">
+      <div class="story-card">
         <img src="https://i.imgur.com/dLH99DU.jpeg" alt="Chain">
         <div class="story-content">
           <h3>Chain</h3>
@@ -1893,7 +1584,7 @@
         
        <!--STORY 24 --> 
       
-      <div class="story-card" data-title="Midnight Flight" data-section="stories" id="story-24">
+      <div class="story-card">
         <img src="https://i.imgur.com/GwVOj5P.jpeg" alt="Midnight Flight">
         <div class="story-content">
           <h3>Midnight Flight</h3>
@@ -1906,7 +1597,7 @@
       
        <!--STORY 25  --> 
       
-      <div class="story-card" data-title="Crush" data-section="stories" id="story-25">
+      <div class="story-card">
         <img src="https://i.imgur.com/LJmtKY7.jpeg" alt="Crush">
         <div class="story-content">
           <h3>Crush</h3>
@@ -1920,7 +1611,7 @@
       
        <!--STORY 26 --> 
       
-      <div class="story-card" data-title="Rolling In Love" data-section="stories" id="story-26">
+      <div class="story-card">
         <img src="https://i.imgur.com/X0IECko.jpeg" alt="">
         <div class="story-content">
           <h3>Rolling In Love</h3>
@@ -1933,7 +1624,7 @@
       
        <!--STORY 27 --> 
       
-      <div class="story-card" data-title="Bad Sugar" data-section="stories" id="story-27">
+      <div class="story-card">
         <img src="https://i.imgur.com/5dcjm6d.jpeg" alt="">
         <div class="story-content">
           <h3>Bad Sugar</h3>
@@ -1946,7 +1637,7 @@
       
        <!--STORY 28 --> 
       
-      <div class="story-card" data-title="Just Friend" data-section="stories" id="story-28">
+      <div class="story-card">
         <img src="https://i.imgur.com/xbot6mz.jpeg" alt="">
         <div class="story-content">
           <h3>Just Friend</h3>
@@ -1959,7 +1650,7 @@
       
        <!--STORY 29 --> 
       
-      <div class="story-card" data-title="Blossom Lady" data-section="stories" id="story-29">
+      <div class="story-card">
         <img src="https://i.imgur.com/4XNm4k4.jpeg" alt="">
         <div class="story-content">
           <h3>Blossom Lady</h3>
@@ -1973,7 +1664,7 @@
       
        <!--STORY 30 --> 
       
-      <div class="story-card" data-title="The Moon Likes Your Smile" data-section="stories" id="story-30">
+      <div class="story-card">
         <img src="https://i.imgur.com/btL8V4i.jpeg" alt="">
         <div class="story-content">
           <h3>The Moon Likes Your Smile</h3>
@@ -1986,7 +1677,7 @@
       
        <!--STORY 31 --> 
       
-      <div class="story-card" data-title="Mirror" data-section="stories" id="story-31">
+      <div class="story-card">
         <img src="https://i.imgur.com/8WexvzD.png" alt="">
         <div class="story-content">
           <h3>Mirror</h3>
@@ -2000,7 +1691,7 @@
       
        <!--STORY 32 --> 
       
-      <div class="story-card" data-title="Uncertainty" data-section="stories" id="story-32">
+      <div class="story-card">
         <img src="https://i.imgur.com/sPAiUlN.jpeg" alt=""> 
         <div class="story-content">
           <h3>Uncertainty</h3>
@@ -2013,7 +1704,7 @@
       
        <!--STORY 33 -->
       
-      <div class="story-card" data-title="Love and Persuasion" data-section="stories" id="story-33">
+      <div class="story-card">
         <img src="https://i.imgur.com/u1dzb7V.jpeg" alt="">
         <div class="story-content">
           <h3>Love and Persuasion</h3>
@@ -2026,7 +1717,7 @@
       
        <!--STORY 34  --> 
       
-      <div class="story-card" data-title="Us" data-section="stories" id="story-34">
+      <div class="story-card">
         <img src="https://i.imgur.com/orDXecv.jpeg" alt="">
         <div class="story-content">
           <h3>Us</h3>
@@ -2040,7 +1731,7 @@
       
        <!--STORY 35 -->
       
-      <div class="story-card" data-title="My Pink Love" data-section="stories" id="story-35">
+      <div class="story-card">
         <img src="https://i.imgur.com/vIsyMmO.jpeg" alt="" loading="lazy">
         <div class="story-content">
           <h3>My Pink Love</h3>
@@ -2054,7 +1745,7 @@
         
      <!--STORY 36 -->  
       
-      <div class="story-card" data-title="My Only Sunshine" data-section="stories" id="story-36">
+      <div class="story-card">
         <img src="https://i.imgur.com/uwj7LP8.jpeg" alt="">
         <div class="story-content">
           <h3>My Only Sunshine</h3>
@@ -2067,7 +1758,7 @@
         
      <!--STORY 37 -->
       
-      <div class="story-card" data-title="Apple" data-section="stories" id="story-37">
+      <div class="story-card">
         <img src="https://i.imgur.com/bxZJdaz.jpeg" alt="Apple">
         <div class="story-content">
           <h3>Apple</h3>
@@ -2081,7 +1772,7 @@
         
        <!--STORY 38  -->
       
-      <div class="story-card mature-content-border" data-title="Dangerous Queen" data-section="stories" id="story-38">
+      <div class="story-card mature-content-border">
         <img src="https://i.imgur.com/PYB0ROe.jpeg" alt="Dangerous Queen">
         <div class="story-content">
           <h3>Dangerous Queen</h3>
@@ -2096,7 +1787,7 @@
         
      <!--STORY 39  --> 
       
-      <div class="story-card" data-title="Petrichor Volume 2" data-section="stories" id="story-39">
+      <div class="story-card">
         <img src="https://i.imgur.com/1CUgIgW.jpeg" alt="" loading="lazy">
         <div class="story-content">
           <h3>Petrichor Volume 2</h3>
@@ -2111,7 +1802,7 @@
         
     <!--STORY 40  --> 
       
-      <div class="story-card" data-title="7 Years" data-section="stories" id="story-40">
+      <div class="story-card">
         <img src="https://i.imgur.com/tnDdP09.jpeg" alt="">
         <div class="story-content">
           <h3>7 Years</h3>
@@ -2124,7 +1815,7 @@
 
        <!--STORY 41  --> 
       
-      <div class="story-card" data-title="Stuck With Me" data-section="stories" id="story-41">
+      <div class="story-card">
         <img src="https://i.imgur.com/sGybpyX.jpeg" alt="">
         <div class="story-content">
           <h3>Stuck With Me</h3>
@@ -2138,7 +1829,7 @@
 
        <!--STORY 42 -->  
       
-      <div class="story-card" data-title="About Galaxy" data-section="stories" id="story-42">
+      <div class="story-card">
         <img src="https://i.imgur.com/l82w9FB.jpeg" alt="">
         <div class="story-content">
           <h3>About Galaxy</h3>
@@ -2151,7 +1842,7 @@
 
       <!--STORY 43 -->  
       
-      <div class="story-card" data-title="I Love You" data-section="stories" id="story-43">
+      <div class="story-card">
         <img src="https://i.imgur.com/l53WdQX.jpeg" alt="">
         <div class="story-content">
           <h3>I Love You</h3>
@@ -2166,7 +1857,7 @@
 
       <!--STORY 44 -->  
       
-      <div class="story-card" data-title="Gap" data-section="stories" id="story-44">
+      <div class="story-card">
         <img src="https://i.imgur.com/OlB8CF8.jpeg" alt="">
         <div class="story-content">
           <h3>Gap</h3>
@@ -2181,7 +1872,7 @@
 
       <!--STORY 45  -->  
       
-      <div class="story-card" data-title="Mate" data-section="stories" id="story-45">
+      <div class="story-card">
         <img src="https://i.imgur.com/suzg78a.jpeg" alt="">
         <div class="story-content">
           <h3>Mate</h3>
@@ -2196,7 +1887,7 @@
 
       <!--STORY 46 -->  
       
-      <div class="story-card mature-content-border" data-title="Lyric" data-section="stories" id="story-46">
+      <div class="story-card mature-content-border">
         <img src="https://i.imgur.com/W8SzoNH.jpeg" alt="">
         <div class="story-content">
           <h3>Lyric</h3>
@@ -2212,7 +1903,7 @@
 
       <!--STORY 47 -->  
       
-      <div class="story-card mature-content-border" data-title="No.5" data-section="stories" id="story-47">
+      <div class="story-card mature-content-border">
         <img src="https://i.imgur.com/LeL6MFF.png" alt="No.5">
         <div class="story-content">
           <h3>No.5</h3>
@@ -2228,7 +1919,7 @@
 
       <!--STORY 48 -->
       
-      <div class="story-card" data-title="4P Love Is Around" data-section="stories" id="story-48">
+      <div class="story-card">
         <img src="https://i.imgur.com/aMD1Vrn.png" alt="">
         <div class="story-content">
           <h3>4P Love Is Around</h3>
@@ -2241,7 +1932,7 @@
 
       <!--STORY 49 -->
       
-      <div class="story-card" data-title="Arpo" data-section="stories" id="story-49">
+      <div class="story-card">
         <img src="https://i.imgur.com/tsHnjLX.jpeg" alt="">
         <div class="story-content">
           <h3>Arpo</h3>
@@ -2254,7 +1945,7 @@
 
       <!--STORY 50 --> 
       
-      <div class="story-card" data-title="Ashes Of Our Hearts" data-section="stories" id="story-50">
+      <div class="story-card">
         <img src="https://i.imgur.com/MKUx8pq.jpeg" alt="">
         <div class="story-content">
           <h3>Ashes Of Our Hearts</h3>
@@ -2267,7 +1958,7 @@
       
         <!--STORY 51 --> 
       
-      <div class="story-card" data-title="Careless Whisper" data-section="stories" id="story-51">
+      <div class="story-card">
         <img src="https://i.imgur.com/Ow9VwXH.jpeg" alt="">
         <div class="story-content">
           <h3>Careless Whisper (Unedited Version)</h3>
@@ -2280,7 +1971,7 @@
       
         <!--STORY 52 -->
       
-      <div class="story-card" data-title="Curtain Love" data-section="stories" id="story-52">
+      <div class="story-card">
         <img src="https://i.imgur.com/Y34oUKQ.jpeg" alt="">
         <div class="story-content">
           <h3>Curtain Love</h3>
@@ -2294,7 +1985,7 @@
       
         <!--STORY 53 --> 
       
-      <div class="story-card" data-title="God: When God Is In Love" data-section="stories" id="story-53">
+      <div class="story-card">
         <img src="https://i.imgur.com/x1fEIRo.jpeg" alt="">
         <div class="story-content">
           <h3>God: When God Is In Love (Volume 1)</h3>
@@ -2308,7 +1999,7 @@
 
         <!--STORY 54 --> 
       
-      <div class="story-card" data-title="Like A Palette" data-section="stories" id="story-54">
+      <div class="story-card">
         <img src="https://i.imgur.com/rr5mjKE.jpeg" alt="">
         <div class="story-content">
           <h3>Like A Palette</h3>
@@ -2322,7 +2013,7 @@
       
         <!--STORY 55 -->
       
-      <div class="story-card" data-title="Little Bit, Little More" data-section="stories" id="story-55">
+      <div class="story-card">
         <img src="https://i.imgur.com/wiaDPdt.jpeg" alt="">
         <div class="story-content">
           <h3>Little Bit, Little More</h3>
@@ -2336,7 +2027,7 @@
       
         <!--STORY 56 --> 
       
-      <div class="story-card" data-title="Love Begins With A Terrible Kiss" data-section="stories" id="story-56">
+      <div class="story-card">
         <img src="https://i.imgur.com/2O5CXAC.jpeg" alt="">
         <div class="story-content">
           <h3>Love Begins With A Terrible Kiss</h3>
@@ -2349,7 +2040,7 @@
       
         <!--STORY 57 --> 
       
-      <div class="story-card" data-title="Luv Is Just Love" data-section="stories" id="story-57">
+      <div class="story-card">
         <img src="https://i.imgur.com/MFUdc1Z.jpeg" alt="">
         <div class="story-content">
           <h3>Luv Is Just Love</h3>
@@ -2362,7 +2053,7 @@
       
         <!--STORY 58 --> 
       
-      <div class="story-card" data-title="More And More" data-section="stories" id="story-58">
+      <div class="story-card">
         <img src="https://i.imgur.com/qPfiyS8.jpeg" alt="">
         <div class="story-content">
           <h3>More And More</h3>
@@ -2376,7 +2067,7 @@
       
         <!--STORY 59 -->
       
-      <div class="story-card" data-title="Only One Answer" data-section="stories" id="story-59">
+      <div class="story-card">
         <img src="https://i.imgur.com/nCHBvhC.jpeg" alt="">
         <div class="story-content">
           <h3>Only One Answer</h3>
@@ -2390,7 +2081,7 @@
       
         <!--STORY 60 --> 
       
-      <div class="story-card" data-title="Predict" data-section="stories" id="story-60">
+      <div class="story-card">
         <img src="https://i.imgur.com/62IOf79.jpeg" alt="">
         <div class="story-content">
           <h3>Predict</h3>
@@ -2404,7 +2095,7 @@
       
         <!--STORY 61 -->  
       
-      <div class="story-card" data-title="Remain" data-section="stories" id="story-61">
+      <div class="story-card">
         <img src="https://i.imgur.com/Kl10mNy.png" alt="">
         <div class="story-content">
           <h3>Remain (Volume 1)</h3>
@@ -2418,7 +2109,7 @@
       
       <!--STORY 62 --> 
       
-      <div class="story-card" data-title="Remain Volume 2" data-section="stories" id="story-62">
+      <div class="story-card">
         <img src="https://i.imgur.com/triz4fU.png" alt="">
         <div class="story-content">
           <h3>Remain (Volume 2)</h3>
@@ -2431,7 +2122,7 @@
       
       <!--STORY 63 --> 
       
-        <div class="story-card" data-title="Rooftop Desire" data-section="stories" id="story-63">
+        <div class="story-card">
         <img src="https://i.imgur.com/6Bik0pj.jpeg" alt="">
         <div class="story-content">
           <h3>Rooftop Desire</h3>
@@ -2444,7 +2135,7 @@
       
       <!--STORY 64 -->
       
-        <div class="story-card" data-title="Smile My Tutor" data-section="stories" id="story-64">
+        <div class="story-card">
         <img src="https://i.imgur.com/f9Kyaxh.jpeg" alt="">
         <div class="story-content">
           <h3>Smile My Tutor</h3>
@@ -2457,7 +2148,7 @@
       
       <!--STORY 65-->
       
-        <div class="story-card mature-content-border" data-title="Shape of Status" data-section="stories" id="story-65">
+        <div class="story-card mature-content-border">
         <img src="https://i.imgur.com/d1U1w9n.jpeg" alt="">
         <div class="story-content">
           <h3>Shape of Status</h3>
@@ -2473,7 +2164,7 @@
       
       <!--STORY 66 -->
     
-      <div class="story-card" data-title="Stop Being Evil" data-section="stories" id="story-66">
+      <div class="story-card">
         <img src="https://i.imgur.com/Z9rFryQ.jpeg" alt="">
         <div class="story-content">
           <h3>Stop Being Evil (To Your Lover)</h3>
@@ -2487,7 +2178,7 @@
       
       <!--STORY 67 -->
       
-      <div class="story-card" data-title="Stop Your Heart" data-section="stories" id="story-67">
+      <div class="story-card">
         <img src="https://i.imgur.com/JrhNxPa.jpeg" alt="">
         <div class="story-content">
           <h3>Stop Your Heart (For Me)</h3>
@@ -2501,7 +2192,7 @@
       
       <!--STORY 68 -->
       
-      <div class="story-card" data-title="The Dragon" data-section="stories" id="story-68">
+      <div class="story-card">
         <img src="https://i.imgur.com/13eMiqm.jpeg" alt="">
         <div class="story-content">
           <h3>The Dragon</h3>
@@ -2515,7 +2206,7 @@
       
       <!--STORY 69 --> 
       
-      <div class="story-card" data-title="Until We Meet Again" data-section="stories" id="story-69">
+      <div class="story-card">
         <img src="https://i.imgur.com/jAPWC2s.jpeg" alt="">
         <div class="story-content">
           <h3>Until We Meet Again</h3>
@@ -2529,7 +2220,7 @@
       
       <!--STORY 70 --> 
       
-      <div class="story-card" data-title="Warm Eyes" data-section="stories" id="story-70">
+      <div class="story-card">
         <img src="https://i.imgur.com/PEC9I0s.jpeg" alt="">
         <div class="story-content">
           <h3>Warm Eyes</h3>
@@ -2543,7 +2234,7 @@
       
       <!--STORY 71 --> 
       
-      <div class="story-card" data-title="Wind's Trick" data-section="stories" id="story-71">
+      <div class="story-card">
         <img src="https://i.imgur.com/A4wwj2G.jpeg" alt="">
         <div class="story-content">
           <h3>Wind's Trick</h3>
@@ -2555,7 +2246,7 @@
       
         <!--STORY 72 -->
       
-      <div class="story-card" data-title="911 Love Code" data-section="stories" id="story-72">
+      <div class="story-card">
         <img src="https://i.imgur.com/hZs1NO4.png" alt="911 Love Code">
         <div class="story-content">
           <h3>911 Love Code</h3>
@@ -2569,7 +2260,7 @@
 
         <!--STORY 73 --> 
       
-      <div class="story-card" data-title="Runaway" data-section="stories" id="story-73">
+      <div class="story-card">
         <img src="https://i.imgur.com/ityk0E0.png" alt="">
         <div class="story-content">
           <h3>Runaway</h3>
@@ -2583,7 +2274,7 @@
       
         <!--STORY 74 --> 
       
-      <div class="story-card" data-title="Be My Boo" data-section="stories" id="story-74">
+      <div class="story-card">
         <img src="https://i.imgur.com/w2vv6bL.png" alt="">
         <div class="story-content">
           <h3>Be My Boo</h3>
@@ -2596,7 +2287,7 @@
       
         <!--STORY 75 --> 
       
-      <div class="story-card" data-title="Chloe" data-section="stories" id="story-75">
+      <div class="story-card">
         <img src="https://i.imgur.com/K1ZP1W5.png" alt="">
         <div class="story-content">
           <h3>Chloe</h3>
@@ -2610,7 +2301,7 @@
 
     <!--STORY 76 --> 
       
-      <div class="story-card" data-title="Hidden Love Trick" data-section="stories" id="story-76">
+      <div class="story-card">
         <img src="https://i.imgur.com/OKenpQN.png" alt="">
         <div class="story-content">
           <h3>Hidden Love Trick</h3>
@@ -2623,7 +2314,7 @@
 
       <!--STORY 77 --> 
       
-      <div class="story-card" data-title="Nope! I Don't Love You" data-section="stories" id="story-77">
+      <div class="story-card">
         <img src="https://i.imgur.com/gT1OlVf.png" alt="">
         <div class="story-content">
           <h3>Nope! I Don't Love You</h3>
@@ -2636,7 +2327,7 @@
 
        <!--STORY 78 -->
       
-      <div class="story-card" data-title="The Chef's Favorite" data-section="stories" id="story-78">
+      <div class="story-card">
         <img src="https://i.imgur.com/DH6rsrZ.png" alt="">
         <div class="story-content">
           <h3>The Chef's Favorite</h3>
@@ -2649,7 +2340,7 @@
 
        <!--STORY 79 -->
       
-      <div class="story-card" data-title="If I Stop Being Stubborn" data-section="stories" id="story-79">
+      <div class="story-card">
         <img src="https://i.imgur.com/irIqoYy.png" alt="">
         <div class="story-content">
           <h3>If I Stop Being Stubborn, Would You Love Me?</h3>
@@ -2663,7 +2354,7 @@
 
        <!--STORY 80 -->
       
-      <div class="story-card" data-title="I See You" data-section="stories" id="story-80">
+      <div class="story-card">
         <img src="https://i.imgur.com/Z4pvN4o.png" alt="">
         <div class="story-content">
           <h3>I See You</h3>
@@ -2677,7 +2368,7 @@
 
        <!--STORY 81 -->
       
-      <div class="story-card" data-title="Defeated By The Shadow Of Love" data-section="stories" id="story-81">
+      <div class="story-card">
         <img src="https://i.imgur.com/bAtogmg.jpeg" alt="">
         <div class="story-content">
           <h3>Defeated By The Shadow Of Love</h3>
@@ -2691,7 +2382,7 @@
 
        <!--STORY 82 -->
       
-      <div class="story-card" data-title="Rhythm" data-section="stories" id="story-82">
+      <div class="story-card">
         <img src="https://i.imgur.com/uT3Wr5Q.png" alt="">
         <div class="story-content">
           <h3>Rhythm (Volume 1)</h3>
@@ -2705,7 +2396,7 @@
 
        <!--STORY 83 
       
-      <div class="story-card" data-title="" data-section="stories" id="story-83">
+      <div class="story-card">
         <img src="" alt="">
         <div class="story-content">
           <h3></h3>
@@ -2719,7 +2410,7 @@
 
        <!--STORY 84 
       
-      <div class="story-card" data-title="" data-section="stories" id="story-84">
+      <div class="story-card">
         <img src="" alt="">
         <div class="story-content">
           <h3></h3>
@@ -2733,7 +2424,7 @@
 
        <!--STORY 85 
       
-      <div class="story-card" data-title="" data-section="stories" id="story-85">
+      <div class="story-card">
         <img src="" alt="">
         <div class="story-content">
           <h3></h3>
@@ -2747,7 +2438,7 @@
 
        <!--STORY 86 
       
-      <div class="story-card" data-title="" data-section="stories" id="story-86">
+      <div class="story-card">
         <img src="" alt="">
         <div class="story-content">
           <h3></h3>
@@ -2777,7 +2468,7 @@
         
         <!--ORIGINAL 1-->
         
-      <div class="story-card" data-title="Salt In Her Veins" data-section="original" id="original-1">
+      <div class="story-card">
         <img src="https://i.imgur.com/PFqnE02.png" alt="Salt In Her Veins">
         <div class="story-content">
           <h3>Salt In Her Veins</h3>
@@ -2789,7 +2480,7 @@
         
         <!--ORIGINAL 2-->
         
-      <div class="story-card" data-title="Yesterday's Happiness" data-section="original" id="original-2">
+      <div class="story-card">
         <img src="https://i.imgur.com/lzqztmy.png" alt="Yesterday's Happiness">
         <div class="story-content">
           <h3>Yesterday's Happiness</h3>
@@ -2802,7 +2493,7 @@
 
       <!-- ORIGINAL 3 -->
 
-        <div class="story-card" data-title="The Clockmaker's Daughter" data-section="original" id="original-3">
+        <div class="story-card">
         <img src="https://i.imgur.com/pFplKVc.png" alt="The Clockmaker's Daugther">
         <div class="story-content">
           <h3>The Clockmaker's Daugther</h3>
@@ -2815,7 +2506,7 @@
       
       <!-- ORIGINAL 4 -->
       
-      <div class="story-card" data-title="Vengeance and Crippled" data-section="original" id="original-4">
+      <div class="story-card">
         <img src="https://i.imgur.com/Y0faMa6.png" alt="">
         <div class="story-content">
           <h3>Vengeance and Crippled</h3>
@@ -2828,7 +2519,7 @@
       
       <!-- ORIGINAL 5
 
-      <div class="story-card" data-title="" data-section="original" id="original-5">
+      <div class="story-card">
         <img src="" alt="">
         <div class="story-content">
           <h3></h3>
@@ -2843,7 +2534,7 @@
       
       <!-- ORIGINAL 6
 
-      <div class="story-card" data-title="" data-section="original" id="original-6">
+      <div class="story-card">
         <img src="" alt="">
         <div class="story-content">
           <h3></h3>
@@ -2901,6 +2592,7 @@
       <iframe 
         src="https://docs.google.com/forms/d/e/1FAIpQLSfmaoSbppVZ3dt8C8EWU9UUHCxB2mJvSLQtxLECQPZ0WhBGrQ/viewform?usp=header" 
         width="100%" 
+        height="600" 
         frameborder="0" 
         marginheight="0" 
         marginwidth="0">
@@ -2957,9 +2649,7 @@
         <h2>Story Reader</h2>
         <span class="close-btn" onclick="closeModal()">&times;</span>
       </div>
-      <div class="modal-body">
-        <iframe id="storyFrame" src=""></iframe>
-      </div>
+      <iframe id="storyFrame" src=""></iframe>
     </div>
   </div>
 
@@ -3103,31 +2793,33 @@
       // Scroll to the newly added stories (last two stories in the grid)
       const storyCards = document.querySelectorAll('.story-card');
       if (storyCards.length >= 2) {
-        // Get the last two story cards
-        const lastStory = document.getElementById("story-82"); // Rhythm (Volume 1)
-        const secondLastStory = document.getElementById("story-81"); // Defeated By The Shadow Of Love
+        const lastStory = storyCards[storyCards.length - 1];
+        const secondLastStory = storyCards[storyCards.length - 2];
         
-        if (lastStory && secondLastStory) {
-          // Scroll to the second last story (Defeated By The Shadow Of Love)
-          const offsetTop = secondLastStory.offsetTop - 100;
-          window.scrollTo({
-            top: offsetTop,
-            behavior: 'smooth'
-          });
-          
-          // Add temporary highlight effect to both stories
-          [secondLastStory, lastStory].forEach(story => {
-            story.style.boxShadow = '0 0 30px rgba(255, 64, 129, 0.8)';
-            story.style.transform = 'scale(1.02)';
-            story.style.transition = 'all 0.5s ease';
-            
-            // Remove highlight after 3 seconds
-            setTimeout(() => {
-              story.style.boxShadow = '';
-              story.style.transform = '';
-            }, 3000);
-          });
-        }
+        // Scroll to the second last story (Defeated By The Shadow Of Love)
+        const offsetTop = secondLastStory.offsetTop - 100;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+        
+        // Add temporary highlight effect
+        secondLastStory.style.boxShadow = '0 0 30px rgba(255, 64, 129, 0.8)';
+        secondLastStory.style.transform = 'scale(1.02)';
+        secondLastStory.style.transition = 'all 0.5s ease';
+        
+        // Also highlight the last story (Rhythm Volume 1)
+        lastStory.style.boxShadow = '0 0 30px rgba(124, 77, 255, 0.8)';
+        lastStory.style.transform = 'scale(1.02)';
+        lastStory.style.transition = 'all 0.5s ease';
+        
+        // Remove highlight after 3 seconds
+        setTimeout(() => {
+          secondLastStory.style.boxShadow = '';
+          secondLastStory.style.transform = '';
+          lastStory.style.boxShadow = '';
+          lastStory.style.transform = '';
+        }, 3000);
       }
     }
     
@@ -3296,89 +2988,6 @@
       }
       
       currentStoryUrl = '';
-    }
-    
-    // Search functionality
-    const searchInput = document.getElementById('searchInput');
-    const searchResults = document.getElementById('searchResults');
-    const allStories = document.querySelectorAll('.story-card');
-    
-    // Create search index
-    const searchIndex = [];
-    allStories.forEach(story => {
-      const title = story.querySelector('h3').textContent.toLowerCase();
-      const section = story.getAttribute('data-section');
-      const id = story.id;
-      searchIndex.push({
-        title: title,
-        element: story,
-        section: section,
-        id: id
-      });
-    });
-    
-    searchInput.addEventListener('input', function() {
-      const query = this.value.toLowerCase().trim();
-      
-      if (query.length === 0) {
-        searchResults.style.display = 'none';
-        return;
-      }
-      
-      const filteredResults = searchIndex.filter(item => 
-        item.title.includes(query)
-      );
-      
-      if (filteredResults.length === 0) {
-        searchResults.innerHTML = '<div class="search-result-item">No stories found</div>';
-        searchResults.style.display = 'block';
-        return;
-      }
-      
-      let resultsHTML = '';
-      filteredResults.forEach(result => {
-        const sectionName = result.section === 'original' ? 'Original Stories' : 'All Stories';
-        resultsHTML += `
-          <div class="search-result-item" onclick="scrollToStory('${result.id}')">
-            <div class="search-result-title">${result.element.querySelector('h3').textContent}</div>
-            <div class="search-result-section">${sectionName}</div>
-          </div>
-        `;
-      });
-      
-      searchResults.innerHTML = resultsHTML;
-      searchResults.style.display = 'block';
-    });
-    
-    // Close search results when clicking outside
-    document.addEventListener('click', function(e) {
-      if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-        searchResults.style.display = 'none';
-      }
-    });
-    
-    function scrollToStory(storyId) {
-      const targetStory = document.getElementById(storyId);
-      
-      if (targetStory) {
-        // Close search results
-        searchResults.style.display = 'none';
-        searchInput.value = '';
-        
-        // Scroll to the story
-        targetStory.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        
-        // Add temporary highlight
-        targetStory.style.boxShadow = '0 0 30px rgba(124, 77, 255, 0.8)';
-        targetStory.style.transform = 'scale(1.02)';
-        targetStory.style.transition = 'all 0.5s ease';
-        
-        // Remove highlight after 2 seconds
-        setTimeout(() => {
-          targetStory.style.boxShadow = '';
-          targetStory.style.transform = '';
-        }, 2000);
-      }
     }
   </script>
 
